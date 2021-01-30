@@ -46,8 +46,13 @@ function getInputValue(ticket) {
 //book now event handler part
 document.getElementById('book-now').addEventListener('click', function () {
     document.getElementById('book-now-event').style.display = 'none';
-
     document.getElementById('notification').style.display = 'block';
+
+    document.getElementById('sub-total-amount').innerText = document.getElementById('sub-total').innerText;
+    document.getElementById('vat-charge-amount').innerText = document.getElementById('vat-charge').innerText;
+    document.getElementById('total-all-amount').innerText = document.getElementById('total-amount').innerText;
+   
 })
 
 // Thank You //
+

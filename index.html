@@ -53,9 +53,8 @@
             <div class="input-group f-class">
                 <div>
                     <h4>First Class ticket per price : ($150)</h4>
-                    <br>
                     <label for="">First Class ($<span id="first-class-total">0</span>)</label>
-                    <input id="first-class-ticket-count" class="inp-style inp-width" type="number" name="" value="0">
+                    <input id="first-class-ticket-count" class="inp-style inp-width" type="text" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
                     <!-- adding positive negative button for first class ticket-->
@@ -70,9 +69,8 @@
             <div class="input-group f-class">
                 <div>
                     <h4>Economy Class ticket per price : ($100)</h4>
-                    <br>
                     <label for="">Economy ($<span id="economy-class-total">0</span>)</label>
-                    <input id="economy-class-ticket-count" class="inp-style inp-width" type="number" name="" value="0">
+                    <input id="economy-class-ticket-count" class="inp-style inp-width" type="text" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
                     <!-- adding positive negative button for economy class ticket-->
@@ -120,21 +118,55 @@
                 veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise
                 voluptatibus quam</p>
         </div>
-        </section>
-
         <!-- Extra part for Booking notification -->
-        <section>
-            <div id="notification">
-                <h1>CONGRATULATIONS FOR <br> <span class="text-color"> PURCHASING TICKETS</span></h1>
+        <div id="notification">
+            <div class="calculations">
+                <div>
+                    <h1>CONGRATULATIONS <br></h1>
+                    <p> <span class="text-color">Successfully booked your tickets</span></p>
+                    <br>
+                </div>
+                <div class="amount">
+                    <div class="left">
+                        <p>Subtotal amount :</p>
+                    </div>
+                    <div class="right">
+                        <p>$<span id="sub-total-amount">0</span></p>
+                    </div>
+                </div>
+
+                <div class="amount">
+                    <div class="left">
+                        <p>Charge 10% VAT :</p>
+                    </div>
+                    <div class="right">
+                        <p>$<span id="vat-charge-amount">0</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="amount">
+                    <div class="left">
+                        <h4>Total amount :</h4>
+                    </div>
+                    <div class="right">
+                        <p>$<span id="total-all-amount">0</span></p>
+                    </div>
+                </div>
                 <br>
-                <h2> <i class="fas fa-fighter-jet"></i> <span class="h2-color">Happy Journey </span> <i
-                        class="fas fa-fighter-jet"></i> </h2>
                 <br>
-                <h1>Thank You</h1>
-                <br>
-                <p><i class="fab fa-facebook"> </i> <i class="fas fa-at"></i> <i class="fab fa-whatsapp"></i> <i
-                        class="fab fa-facebook-messenger"></i></p>
+                <div>
+                    <p> <i class="fas fa-fighter-jet"></i> <span class="h2-color">Happy Journey </span> <i
+                            class="fas fa-fighter-jet"></i>
+                    </p>
+                    <br>
+                    <h1>Thank You</h1>
+                    <br>
+                    <p><i class="fab fa-facebook"> </i> <i class="fas fa-at"></i> <i class="fab fa-whatsapp"></i> <i
+                            class="fab fa-facebook-messenger"></i>
+                    </p>
+                </div>
             </div>
+        </div>
         </section>
 
         <!-- javaScript  link here -->
