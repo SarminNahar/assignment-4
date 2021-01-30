@@ -20,7 +20,7 @@ function handleFlightTicket(ticket, isIncrease) {
     calculateTicketTotal();
 }
 
-// calculate total amount
+// calculate for total amount, subtotal and vat
 function calculateTicketTotal(){
     const firstClassTicketCount = getInputValue('first-class');
     const economyClassTicketCount = getInputValue('economy-class');
@@ -42,3 +42,12 @@ function getInputValue(ticket){
     const ticketCount = parseInt(ticketInput.value);
     return ticketCount;
 }
+
+//book now event handler part
+document.getElementById('book-now').addEventListener('click', function(){
+    document.getElementById('book-now-event').style.display = 'none';
+
+    document.getElementById('notification').style.display = 'block';
+})
+
+// Thank You //

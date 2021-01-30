@@ -30,7 +30,7 @@
 
     <!--Booking Section-->
     <main class="main-content container">
-        <div class="booking-form">
+        <div id="book-now-event" class="booking-form">
             <h3>Booking Flights</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
@@ -52,8 +52,10 @@
             </div>
             <div class="input-group f-class">
                 <div>
-                    <label for="">First Class ($<span id="first-class-total">150</span>)</label>
-                    <input id="first-class-ticket-count" class="inp-style inp-width" type="number" name="" value="1">
+                    <h4>First Class ticket per price : ($150)</h4> 
+                    <br>
+                    <label for="">First Class ($<span id="first-class-total">0</span>)</label>
+                    <input id="first-class-ticket-count" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
                     <!-- adding positive negative button for first class ticket-->
@@ -65,8 +67,10 @@
             
             <div class="input-group f-class">
                 <div>
-                    <label for="">Economy ($<span id="economy-class-total">100</span>)</label>
-                    <input id="economy-class-ticket-count" class="inp-style inp-width" type="number" name="" value="1">
+                    <h4>Economy Class ticket per price : ($100)</h4>
+                    <br>
+                    <label for="">Economy ($<span id="economy-class-total">0</span>)</label>
+                    <input id="economy-class-ticket-count" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
                     <!-- adding positive negative button for economy class ticket-->
@@ -81,7 +85,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p>$<span id="sub-total">250</span></p>
+                        <p>$<span id="sub-total">0</span></p>
                     </div>
                 </div>
 
@@ -90,7 +94,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$<span id="vat-charge">25</span></p>
+                        <p>$<span id="vat-charge">0</span></p>
                     </div>
                 </div>
                 <hr>
@@ -99,11 +103,11 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p>$<span id="total-amount">275</span></p>
+                        <p>$<span id="total-amount">0</span></p>
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="book-now" class="btn-style">Book Now</button>
         </div>
 
         <div class="booking-content">
@@ -112,10 +116,25 @@
         </div>
     </section>
 
+    <!-- Extra part for Booking notification -->
+    <section>
+        <div id="notification">
+            <h1>CONGRATULATIONS FOR  <br> <span class="text-color"> PURCHASING  TICKETS</span></h1>
+            <br>
+            <h2> <i class="fas fa-fighter-jet"></i> <span class="h2-color">Happy Journey </span>  <i class="fas fa-fighter-jet"></i> </h2> 
+            <br>
+            <h1>Thank You</h1> 
+            <br>
+            <p><i class="fab fa-facebook">  </i> <i class="fas fa-at"></i>  <i class="fab fa-whatsapp"></i>  <i class="fab fa-facebook-messenger"></i></p>
+        </div>
+    </section>
+
     <!--Thank You-->
 
     <!-- javaScript  link here -->
     <script src="javaScript.js"></script>
+
+    
 </body>
 
 </html>

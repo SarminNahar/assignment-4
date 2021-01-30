@@ -120,3 +120,21 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+#notification{
+    box-shadow: 10px 10px 20px rgb(53, 32, 248);
+    background-color:rgb(53, 32, 248);
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 50px 200px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    color: white;
+    font-size: 700;
+}
+.text-color{
+    color:orange;
+}
+.h2-color{
+    color:salmon;
+}
